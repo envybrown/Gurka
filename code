@@ -170,7 +170,11 @@ bool error() {
 
 void intro(int &introAns) {
     cout<<"\nWelcome to...\n"<<endl;
-	cout<<"GURKA"<<endl;
+	cout<<"    GGGGGG   U    U   RRRRR    K    K   AAAAAA\n";
+	cout<<"   G        U    U   R    R   K   K    A    A\n";
+	cout<<"  G  GGG   U    U   RRRRR    KKKK     AAAAAA\n";
+	cout<<" G    G   U    U   R   R    K   K    A    A\n";
+    cout<<"GGGGGG   UUUUUU   R    R   K    K   A    A"<<endl;
 
 	while (true){
         cout<<"\nWould you like to see the rules (1) or begin game (2)?: ";
@@ -188,7 +192,20 @@ void intro(int &introAns) {
 	
 	// input directory 
 	if (introAns==1){
-	    cout<<"\nRULES RULES RULES";
+	    cout<<"\n**How to start:** To start the game each player gets 6 cards.";
+	    cout<<"\n\n**How to play:** Your goal is to get to the final round with the lowest card at the table.";
+	    cout<<"\nEach player takes turns placing down a card.";
+	    cout<<"\nYour card must be of higher or equal value (ex: player one places an 8 and player two places a 10).";
+	    cout<<"\nIf you can’t play a valid card you must play the lowest card in your hand.";
+	    cout<<"\nAfter every player puts down a card, the cards that were played in that round get set to the side.";
+	    cout<<"\n\n**Turns:** The order of the turns is decided by who won the previous round.";
+	    cout<<"\n\n**How to Win:** In order to win you need to get your opponents points as low as possible.";
+	    cout<<"\nAfter the last round the player with the lowest card keeps their points the same.";
+	    cout<<"\nAll other players subtract the value of their last card from their total points.";
+	    cout<<"\nWhen a player hits 0 points the game ends and players are ranked in order of their points.";
+	    cout<<"\nThe winner is the player with the most points when the game ends.";
+
+	    
     	cout<<"\n\nPress ENTER to begin...";
     	cin.ignore();
     	cin.get();
@@ -452,8 +469,3 @@ Card playBot (Player &p, int lastValue) {
     
     return chosen;
 }
-
-
-
-
-
